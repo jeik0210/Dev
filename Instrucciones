@@ -17,3 +17,8 @@ hasta el momento ha sido probado en las siguientes distros:
 -linux mint
 -kali (No debe ser ejecutado como root)
 
+recomendaciones:
+cuando se instale el segundo script , nos pedira ingresar nuestra clave para 
+mysql-server posteriormente la instalacion continuara.
+Debemos estar atentos tambien a la consola , algunos programas nos va a pedir
+ingresar nuestras contraseñas de session.

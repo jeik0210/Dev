@@ -4,8 +4,12 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install figlet -y
 sudo apt-get install fortune cowsay
+sudo add-apt-repository ppa:webupd8team/sublime-text-3 
+sudo apt-get install curl
+sudo apt-get install zsh -y
+curl -L http://install.ohmyz.sh | sh
 figlet devAcademy -c
-if (`zenity --question --text="continuar instalación"`)
+if (`zenity --question --text="estas listo"`)
 then
 (
 echo "10" ; sleep 1
@@ -42,11 +46,10 @@ echo "80" ; sleep 1
 echo "# instalando curl..." ; sleep 1
 sudo apt-get install curl
 echo "85" ; sleep 1
-echo "# instalando zsh [pulsar intro]" ; sleep 1
-sudo apt-get install zsh -y
-curl -L http://install.ohmyz.sh | sh
+echo "# instalando zsh " ; sleep 1
+#sudo apt-get install zsh -y
+#curl -L http://install.ohmyz.sh | sh
 sudo apt-get update 
-sudo add-apt-repository ppa:webupd8team/sublime-text-3 
 echo "89" ; sleep 1
 echo "# instalando sublime text..." ; sleep 1
 sudo apt-get install sublime-text-installer

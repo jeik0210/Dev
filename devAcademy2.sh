@@ -1,5 +1,7 @@
 #!/bin/bash
 sudo apt-get update 
+zenity --info --title="devAcademy" --text="ingresa tus credenciales mysql"
+sudo apt-get install mysql-server -y
 if (`zenity --question --text="continuar instalación"`)
 then
 (
@@ -47,8 +49,7 @@ zenity --notification\
 echo "60" ; sleep 1
 echo "# instalando mysql..." ; sleep 1
 sudo dpkg --configure -a
-sudo apt-get install mysql-server -y
-sudo dpkg --configure -a
+#sudo apt-get install mysql-server -y
 zenity --notification\
     --window-icon="info" \
     --text="se ha instalado mysql"

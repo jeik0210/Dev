@@ -67,8 +67,9 @@ echo "# instalando  rbenv..." ; sleep 1
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-b$
-git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/$
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+sudo apt-get install bison libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf texinfo libncurses-dev automake libssl-dev build-essential libffi-dev
 sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev
 zenity --notification\
     --window-icon="info" \

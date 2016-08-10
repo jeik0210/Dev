@@ -1,4 +1,5 @@
 #!/bin/bash
+# -*- ENCODING: UTF-8 -*-
 zenity --info --title="devAcademy" --text="Bienvenido¡ Es importante actualizar su sistema"
 sudo apt-get update
 sudo apt-get upgrade -y
